@@ -73,7 +73,7 @@
     $(document).ready(addElements)
   }
   function addLogo () {
-    $( "#loggedas" ).prepend( "<div class='redmine-logo'></div>" );
+    // $( "#loggedas" ).prepend( "<div class='redmine-logo'></div>" );
     // body...
   }
   $(document).ready(addLogo)
