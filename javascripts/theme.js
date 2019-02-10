@@ -52,10 +52,10 @@
   };
 
   function removeElements() {
-    var menuLeft = document.getElementById( 'top-menu' )
+    var menuLeft = document.getElementById('top-menu')
     var help = menuLeft.getElementsByClassName('help')
-    if (!help) {
-      help.parentNode.removeChild(help);
+    if (help.length) {
+      help[0].parentNode.removeChild(help[0]);
     }
   }
 
