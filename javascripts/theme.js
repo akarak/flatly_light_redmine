@@ -51,6 +51,16 @@
     toggle: toggleClass
   };
 
+  function removeElements() {
+    var menuLeft = document.getElementById( 'top-menu' )
+    var help = menuLeft.getElementsByClassName('help')
+    if (!help) {
+      help.parentNode.removeChild(help);
+    }
+  }
+
+  $(document).ready(removeElements)
+
   function addElements (){
     $( '<div id="menu"><div class="burger"><div class="one"></div><div class="two"></div><div class="three"></div></div><div class="circle"></div></div>' ).insertBefore( $( "#top-menu" ) );
     var menuLeft = document.getElementById( 'top-menu' ),
@@ -69,9 +79,11 @@
       classie.toggle( menuLeft, 'open' );
     };
   }
+
   if (!activeStaticSidebar) {
     $(document).ready(addElements)
   }
+
   function addLogo () {
     // $( "#loggedas" ).prepend( "<div class='redmine-logo'></div>" );
     // body...
