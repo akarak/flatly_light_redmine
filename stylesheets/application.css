@@ -77,8 +77,8 @@ input:focus {
 }
 
 #top-menu > ul{
-  margin-top: 20px;
-  padding: 0 0 20px 20px;
+  margin-top: 10px;
+  padding: 0 0 10px 20px;
   border-bottom: 3px solid #2d3747;
 }
 #top-menu, .menu-push-toright, body, #menu, #quick-search {
@@ -211,10 +211,9 @@ label[for="q"]{
   font-size: 0;
   border-bottom: 3px solid #2d3747;
   margin-top: 10px;
-  margin-left: 20px;
   float: none;
   line-height: 25px;
-  padding-bottom: 5px;
+  padding: 0 0 10px 20px;
 }
 
 #account{
